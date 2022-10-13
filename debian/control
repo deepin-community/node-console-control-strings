@@ -1,0 +1,25 @@
+Source: node-console-control-strings
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Ajinkya Chavan <cajinkya21@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+ , node-tap
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-console-control-strings
+Vcs-Git: https://salsa.debian.org/js-team/node-console-control-strings.git
+Homepage: https://github.com/iarna/console-control-strings
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-console-control-strings
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: cross-platform tested terminal/console command strings
+ This is a library for doing things like color and cursor positioning. This is
+ a subset of both ansi and vt100. All control codes included work on both
+ Windows & Unix-like OSes, except where noted.
+ .
+ Node.js is an event-based server-side JavaScript engine.
